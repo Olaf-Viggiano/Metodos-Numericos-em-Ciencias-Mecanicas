@@ -1,11 +1,6 @@
-# My First Project
+# Sedimentação de uma esfera em um fluido viscoso
 
-This is my first GitHub project! 🎉  
 
-It contains:
-- A Python script
-- Some images
-- This README file
 
 ## Example result
 Here is one of the results:
