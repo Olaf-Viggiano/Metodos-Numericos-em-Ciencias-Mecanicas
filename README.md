@@ -14,9 +14,20 @@ Agora vamos analisar os efeitos do passo de tempo aplicado no método de Runge-k
 
 Agora passamos para a segunda parte do problema, em que consideramos os termos inerciais na sedimentação. O primeiro passo é fazer a adimensionalização da equação proposta, que resulta na seguinte equação adimensionalizada: 
 
+![Plot](images/eq1.png)
 
+Vemos que o número de Reynolds aparece na equação, de modo que os termos inerciais passam a ter um efeito, dependendo deste parâmetro adimensional. 
+Em sala foi apresentado um artigo que traz uma solução analítica para este problema de sedimentação com efeitos inerciais, que que a solução analítica é dada pela equação
 
-## Example result
-Here is one of the results:
+![Plot](images/eq2.png)
 
-![Plot](images/plot1.png)
+Para analisar este caso, vamos considerar um número de Stokes fixo St=1, para estudar apenas a influência do número de Reynolds na sedimentação da esfera. Resolvendo a EDO pelo método de Runge Kutta e comparando com a solução analítica, temos os seguintes resultados:
+
+![Plot](images/plot3.png)
+
+Observa-se que para Reynolds maiores, a velocidade terminal da esfera diminui. Isso ocorre pois com o aumento do número de Reynolds, o termo de inérica ganha maior relevância, de modo que a energia dissipada é maior e a velocidade da esfera diminui, como esperado. 
+
+Finalmente, vamos comparar as soluções no limite assintótico em que Re->0. Neste limite, podemos comparar a solução numérica do segundo caso, considerando Re=0.001, e a solução analítica do primeiro caso, em que desconsidera-se totalmente os termos inerciais. Nesse caso, vemos no gráfico abaixo que as duas soluções convergem no limite em que Re->0
+
+![Plot](images/plot4.png)
+
