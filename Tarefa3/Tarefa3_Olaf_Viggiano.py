@@ -161,7 +161,7 @@ for i,x0 in enumerate(xi):
         k=k+1
         
         # print(x0)
-    print("Raiz encontrada=",x3)
+    print("Raiz encontrada=",x2)
 # print(x_out_mul)
     
     

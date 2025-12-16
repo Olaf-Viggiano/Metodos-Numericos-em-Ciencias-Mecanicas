@@ -42,7 +42,7 @@ def T_ana(x,Fo):
 
 
 #Definição dos parâmetros do problema, valores retirados da internet
-L=0.5 #Comprimento do reator
+L=0.005 #Comprimento do reator
 N=100 #numero de pontos da malha
 dt=0.1 #Passo de tempo
 
@@ -110,6 +110,7 @@ for Fo_ana in All_Fo_ana:
     #loop para calcular a temperatura para cada passo de tempo
     while tempo<t_fin:
         tempo=tempo+dt
+        print(tempo)
         d=T+A
         d[-1]=T[-1]+Fo*(2*Bi*T_inf+q*dx**2/k)
         T=thomas_algorithm(e, f, g, d)
