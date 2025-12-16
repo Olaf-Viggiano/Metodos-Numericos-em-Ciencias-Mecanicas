@@ -1,5 +1,6 @@
   # Problema da concentração e temperatura do reator em função das condições iniciais
 
+O enunciado do problema segue no arquivo encontro4.pdf 
 Neste problema, precisamos resolver a concentração e temperatura final de um reator, em função das concentrações e temperaturas iniciais.
 O programa inicialmente calcula as concentrações finais em função das condições determinadas no enunciado. Em seguida, testa três condições iniciais distintas, que levam a três soluções diferentes. 
 
